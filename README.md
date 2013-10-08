@@ -91,4 +91,4 @@ fi
 
 In the following screenshot you can see my custom prompt when I work on `JugEvents3` with hg and when I work on `SemVer` with git:
 
-![Screenshot](/screenshot)
+![Screenshot](/screenshot.jpg)
