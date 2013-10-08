@@ -74,3 +74,17 @@ PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w$(prompt_vcs)\$ '
 ```
 
 That is all.
+
+
+Adding some color
+-----------------
+
+Probably your `.bashrc` lets you choose a colored prompt. In that case simply introduce the call to the `prompt_vcs` function to both the `PS1` setting lines:
+
+```
+if [ "$color_prompt" = yes ]; then
+    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\[\033[01;33m\]$(prompt_vcs)\[\033[00m\]\$ '
+else
+    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w$(prompt_vcs)\$ '
+fi
+```
