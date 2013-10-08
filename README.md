@@ -88,3 +88,7 @@ else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w$(prompt_vcs)\$ '
 fi
 ```
+
+In the following screenshot you can see my custom prompt when I work on `JugEvents3` with hg and when I work on `SemVer` with git:
+
+![Screenshot](/screenshot)
